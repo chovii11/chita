@@ -1,0 +1,195 @@
+<html>
+<head><title> Portada</title></head>
+
+<center><table border="15"></center>
+
+
+<tr>
+<td colspan="5"><center><img src="Encabezado.png" wiht="1600" height="135"></center></td>
+</tr>
+<tr>
+<td colspan="5"><center><img src="codigo.jpg" wiht="1600" height="145"></center></td>
+</tr>
+
+<tr>
+<td><font size="1">CALENDARIO PEQUEÑO</font size>
+<center><font size="1"> <p width="190" rowspan="30"> <input type="datetime-local"></p></font size> </center>
+
+<center><a href="cecytem.html"><img src="cecyte.png" wiht="25" height="37">
+<center><a href="mision.html"><img src="mision.png" wiht="45" height="45">
+<center><a href="vision.html"><img src="ojo.png" wiht="47" height="40">
+<center><a href="historia.html"><img src="historia.png" wiht="40" height="37">
+<center><a href="organigrama.html"><img src="organigrama.png" wiht="30" height="30">
+<center><a href="croquis.html"><img src="croquis.png" wiht="42" height="40"></td>
+
+<td>
+<h1><center><strong><font size="1.5"><font face="Franklin Gothic Heavy"> <font color="black">COLEGIO DE ESTUDIOS CIENTIFICOS Y TECNOLOGICOS DEL ESTADO DE MEXICO PLANTEL IXTLAHUACA CECYTEM </font color></font face></font size></strong></center></h1>
+
+<h1><center><strong><font size="2"><font face="Elephan"> <font color="black">Portafolio de evidencias 2do parcial </font color></font face></font size></strong></center></h1>
+
+<h1><center><strong><font size="1"><font face="Arial Black"> <font color="black"> Modulo III </font color></font face></font size></strong></center></h1>
+
+<h1><center><strong><font size="2"><font face="Arial Black"> <font color="black"> Submodulo II: <font size="1"><font face="Copperplate Gothic Light"> Desarrolla aplicaciones que se ejecuten el cliente </font color></font face></font size></strong></center></h1>
+
+<h1><center><strong><font size="1"><font face="Arial Black"> <font color="black"> Submodulo III: <font size="1"><font face="Copperplate Gothic Light"> Desarrolla aplicaciones que se ejecuten el servidor </font color></font face></font size></strong></center></h1>
+
+<center><img src="Antony.jpg" wiht="100" height="100"><img src="chovi.jpg" wiht="100" height="100"><img src="Neymar.jpg" wiht="185" height="100">
+
+<h1><center><strong><font size="1"><font face="Franklin Gothic Heavy"> <font color="black"> Alumno : <font size="1"><font face="Centaur"> <font color="black">  Erick Rosalio Mauro </font color></font face></font size></strong></center></h1>
+
+<h1><center><strong><font size="1"><font face="Franklin Gothic Heavy"> <font color="black"> Numero de lista: <font size="1"><font face="Centaur"> <font color="black">  35 </font color></font face></font size></strong></center></h1>
+
+<h1><center><strong><font size="1"><font face="Franklin Gothic Heavy"> <font color="black"> Grupo : <font size="1"><font face="Centaur"> <font color="black">  402<font size="1"><font face="Franklin Gothic Heavy"> <font color="black"> Turno : <font size="1"><font face="Centaur"> <font color="black"> Vespertino </font face></font size></strong></center></h1>
+
+<h1><center><strong><font size="1"><font face="Franklin Gothic Heavy"> <font color="black"> Carrera : <font size="1"><font face="Centaur"> <font color="black"> Tecnico en Programacion </font color></font face></font size></strong></center></h1>
+
+<h1><center><strong><font size="1"><font face=" Arial Black "> <font color="black"> Ciclo Escolar 2024-2024 <font size="1"><font face="Franklin Gothic Heavy"> <font color="black"> Fecha : <font size="1"><font face="Centaur"> <font color="black"> 06/03/2024</font color></font face></font size></strong></center></h1>
+
+<td whidth "350">
+<width="200"> <font color="black" size="2" face="tahoma">
+<script type="text/javascript">
+    function greeting()
+{
+   var today = new Date();
+   var hrs = today.getHours();
+   document.writeln("<CENTER>");
+  // document.write("<H1>Buen");
+   if (hrs < 6)
+      document.write("");
+   else if (hrs < 12)
+      document.write("");
+   else if (hrs <= 18)
+      document.write("");
+   else
+      document.write("");
+   document.writeln("</H1>");
+   //document.write("Ingresaste a esta pagina el ");
+   dayStr = today.toLocaleString();
+   //document.write(dayStr);
+   document.writeln("</CENTER>");
+}
+function montharr(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11)
+{
+   this[0] = m0;
+   this[1] = m1;
+   this[2] = m2;
+   this[3] = m3;
+   this[4] = m4;
+   this[5] = m5;
+   this[6] = m6;
+   this[7] = m7;
+   this[8] = m8;
+   this[9] = m9;
+   this[10] = m10;
+   this[11] = m11;
+}
+function calendar()
+{
+   var monthNames = "EneFebMarAbrMayJunJulAgoSepOctNovDic";
+   var today = new Date();
+   var thisDay;
+   var monthDays = new montharr(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+   year = today.getYear() ;
+   thisDay = today.getDate();   
+   if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+   monthDays[1] = 29;
+   nDays = monthDays[today.getMonth()];
+   firstDay = today;
+   firstDay.setDate(1); // works fine for most systems
+   testMe = firstDay.getDate();
+   if (testMe == 2)
+   firstDay.setDate(0);    
+   startDay = firstDay.getDay();
+   document.writeln("<CENTER>");
+   document.write("<TABLE BORDER>");
+   document.write("<TR><TH COLSPAN=10>");
+   document.write(monthNames.substring(today.getMonth() * 3,
+   (today.getMonth() + 1) * 3));
+   document.write(". ");
+   document.write(year);
+   document.write("<TR><TH>D<TH>L<TH>M<TH>M<TH>J<TH>V<TH>S");
+   document.write("<TR>");
+   column = 0;
+   for (i=0; i<startDay; i++)
+   {
+   document.write("<TD>");
+   column++;
+   }
+   for (i=1; i<=nDays; i++)
+   {
+   document.write("<TD>");
+   if (i == thisDay)
+   document.write("<FONT COLOR=\"#FF0000\"><b>")
+   document.write(i);
+   if (i == thisDay)
+   document.write("</b></FONT>")
+   column++;
+   if (column == 7)
+   {
+   document.write("<TR>"); 
+   column = 0;
+   }
+   }
+   document.write("</TABLE>");
+   document.writeln("</CENTER>");
+}
+   greeting();
+   document.write("</br>");
+   calendar();
+   document.write("");
+   </script><p>
+
+<p><width="200"><center> INGRESA AL MENU </center><p>
+<center><form action="#" method="post" id="loginForm">
+        <center><label for="username">Usuario:</label></center>
+        <input type="text" id="username" name="username">
+        <p><center><label for="password">Contraseña:</label></center>
+        <input type="password" id="password" name="password">
+        <br><p>
+        <p><center><input type="submit" value="ENTRAR">  <input type="reset" value="LIMPIAR"></center></form>
+</br>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username==="chovii" && password==="44233") {
+            window.location.href = "menu.html";
+
+        } else {
+            alert("Usuario o contraseña incorrectos");
+        }
+    });
+
+</script>
+
+</td>
+
+
+</tr>
+</td>
+
+
+
+ <tr>
+<td colspan="5">
+<footer>
+ <div style="background-color: #34495E; color: #fff; text-align: center; paddin: 10x;">
+ <p>Algunos derechos reservados 2023. Gobierno del Estado de México</p>
+ <p>Esta página está diseñada para verse mejor en resolución 1280 X 768 o superior, Firefox & Chrome V68, Safari V14, Edge</p>
+ </div>
+</footer>
+</td>
+</tr>
+
+
+
+<tr>
+<td colspan="5"><center><img src="cap.png" wiht="140" height="30"></center></td>
+</tr>
+
+</center></table>
+
+</html>
